@@ -1,0 +1,19 @@
+{
+  "name": "Time Tracking",
+  "description" : "Time Tracking Extension",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://ubilabs.harvestapp.com/time/week",
+        "https://ubilabs.harvestapp.com/time/week/",
+        "https://ubilabs.harvestapp.com/time/week/*"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true,
+      "js": ["index.js"],
+      "css": ["index.css"]
+    }
+  ]
+}
